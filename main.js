@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-import duenoController from "./app/controllers/duenoController.js";
+import duenoController from "./app/controllers/dueñoController.js";
 import mascotaController from "./app/controllers/mascotaController.js";
 
 function mostrarEncabezado() {
