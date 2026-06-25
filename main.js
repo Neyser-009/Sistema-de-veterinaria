@@ -17,27 +17,27 @@ async function init() {
       message: `¿Qué deseas hacer?`,
       choices: [
         {
-          name: "👤 Gestionar Dueños",
+          name: "Gestionar Dueños",
           value: "1",
         },
         {
-          name: "🐕 Gestionar Mascotas",
+          name: "Gestionar Mascotas",
           value: "2",
         },
         {
-          name: "📅 Agendar Citas",
+          name: "Agendar Citas",
           value: "3",
         },
         {
-          name: "🩺 Registrar Consultas",
+          name: "Registrar Consultas",
           value: "4",
         },
         {
-          name: "📋 Ver Historial",
+          name: "Ver Historial",
           value: "5",
         },
         {
-          name: "❌ Salir",
+          name: "Salir",
           value: "6",
         },
       ],
@@ -56,17 +56,17 @@ async function MainMenu(opcion) {
     const mascota = new mascotaController(opcion);
     await mascota.init();
   } else if (opcion === "3") {
-    console.log(chalk.bgYellow.black("📅 Agendar citas (En desarrollo)"));
+    console.log(chalk.bgYellow.black("Agendar citas (En desarrollo)"));
     await new Promise((resolve) => setTimeout(resolve, 2000));
   } else if (opcion === "4") {
-    console.log(chalk.bgBlue.white("🩺 Registrar consultas (En desarrollo)"));
+    console.log(chalk.bgBlue.white("Registrar consultas (En desarrollo)"));
     await new Promise((resolve) => setTimeout(resolve, 2000));
   } else if (opcion === "5") {
-    console.log(chalk.bgCyan.white("📋 Ver historial (En desarrollo)"));
+    console.log(chalk.bgCyan.white("Ver historial (En desarrollo)"));
     await new Promise((resolve) => setTimeout(resolve, 2000));
   } else if (opcion === "6") {
     // Lógica para salir
-    console.log(chalk.green.bold("¡Hasta luego! 👋"));
+    console.log(chalk.green.bold("¡Hasta luego!"));
     process.exit(0);
   } else {
     console.log(
